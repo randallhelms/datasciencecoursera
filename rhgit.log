@@ -1,0 +1,42 @@
+[33mcommit e3aa9ef684d155706d55f4d78c77b596c3d9c07f[m
+Author: randallhelms <pearsall@gmail.com>
+Date:   Sun Jun 5 21:01:18 2016 +0200
+
+    updates including week 3 assignment
+
+[33mcommit 1a749a96dc7d66ea53187cbfc239fcba864142b6[m
+Author: randallhelms <pearsall@gmail.com>
+Date:   Sun Jun 5 18:04:08 2016 +0200
+
+    push changes
+
+[33mcommit 3503f486f796ee869b064c876949ad8b7575e164[m
+Author: Randall Helms <pearsall@gmail.com>
+Date:   Wed May 18 06:41:23 2016 +0200
+
+    Rename HellowWorld.md to HelloWorld.md
+
+[33mcommit 0313a5ce9d0e8c8ab72f8fbcdf3399d96f9acfe8[m
+Author: Randall Helms <pearsall@gmail.com>
+Date:   Wed May 18 06:41:07 2016 +0200
+
+    Create HellowWorld.md
+
+[33mcommit 96c892b61c751fbbdd4f1aaea52f5d90449f4912[m
+Merge: 24c6d27 6b303e7
+Author: randallhelms <pearsall@gmail.com>
+Date:   Wed May 18 06:37:47 2016 +0200
+
+    Merge branch 'master' of https://github.com/randallhelms/datasciencecoursera
+
+[33mcommit 24c6d271379665bc793855ef501a6b34882cfda5[m
+Author: randallhelms <pearsall@gmail.com>
+Date:   Wed May 18 06:30:34 2016 +0200
+
+    reinitialized files
+
+[33mcommit 6b303e7d8422cc204d77cbd2d208632fecfb5d25[m
+Author: Randall Helms <pearsall@gmail.com>
+Date:   Tue May 17 22:47:53 2016 +0200
+
+    Initial commit
