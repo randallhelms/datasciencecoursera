@@ -1,0 +1,2 @@
+f <- function(a,b=1,c=2,d=NULL) {
+	#example of setting a null value and of defining argument values}
