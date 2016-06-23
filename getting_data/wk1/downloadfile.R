@@ -1,0 +1,17 @@
+#collect url for download
+
+fileURL <- "https://data.baltimorecity.gov/api/views/dz54-2aru/rows.csv?accessType=DOWNLOAD"
+
+#download the file, default method is ok for windows
+
+download.file(fileURL, destfile = ".data/cameras.csv", method = "curl")
+
+#check it's there
+
+list.files("./data")
+
+#add download date
+
+dateDownloaded <- date()
+
+dateDownloaded
