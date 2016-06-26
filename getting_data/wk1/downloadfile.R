@@ -4,11 +4,10 @@ fileURL <- "https://data.baltimorecity.gov/api/views/dz54-2aru/rows.csv?accessTy
 
 #download the file, default method is ok for windows
 
-download.file(fileURL, destfile = ".data/cameras.csv", method = "curl")
-
+download.file(fileURL, destfile = "C:\\Users\\Randall\\rhelms_data\\datasciencecoursera\\getting_data\\wk1\\cameras.csv", method = "curl")
 #check it's there
 
-list.files("./data")
+list.files("C:\\Users\\Randall\\rhelms_data\\datasciencecoursera\\getting_data\\wk1")
 
 #add download date
 
