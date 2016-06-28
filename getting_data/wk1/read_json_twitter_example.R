@@ -42,3 +42,28 @@ json <- httr::content(req, as = "text")
 tweets <- fromJSON(json)
 
 substring(tweets$text, 1, 100)
+
+#flatten json into list
+
+library(devtools)
+
+source_gist(4205477)
+
+tw1 <- LinearizeNestedList(tweets, LinearizeDataFrames = TRUE)
+
+tw2 <- as.data.frame.list(tw1)
+
+#create new variables
+
+text <- tw2$text
+rts <- tw2$retweet_count
+faves <- tw2$favorite_count
+timestamp <- tw2$created_at
+
+#make new data frame
+
+twitter <- data.frame(timestamp,text,rts,faves)
+
+#turn that into a csv file
+
+write.table(twitter,file="twitter_test.csv",sep = ",")
