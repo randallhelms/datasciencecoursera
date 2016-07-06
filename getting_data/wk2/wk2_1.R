@@ -18,6 +18,10 @@ gitApp <- oauth_app("github", git_id, git_secret)
 
 git_token <- oauth2.0_token(oauth_endpoints("github"),gitApp)
 
+#if problems with git_token, run this
+
+file.remove(".httr-oauth")
+
 #get data
 
 jLeek = "https://api.github.com/users/jtleek/repos"
