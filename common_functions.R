@@ -23,4 +23,6 @@ install.packages()
 
 library()
 
-#
+#check what is in the r environment
+
+search()
