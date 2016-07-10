@@ -26,3 +26,11 @@ library()
 #check what is in the r environment
 
 search()
+
+#order in descending order using plyr or dplyr
+
+desc()
+
+#order by one of the columns in plyr or dplyr
+
+arrange()
