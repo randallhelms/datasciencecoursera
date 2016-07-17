@@ -1,0 +1,191 @@
+"CountryCode","gdpRank","X.2","fullName","gdpValue","X.5","X.6","X.7","X.8","X.9"
+"USA",1,NA,"United States"," 16,244,600 ","",NA,NA,NA,NA
+"CHN",2,NA,"China"," 8,227,103 ","",NA,NA,NA,NA
+"JPN",3,NA,"Japan"," 5,959,718 ","",NA,NA,NA,NA
+"DEU",4,NA,"Germany"," 3,428,131 ","",NA,NA,NA,NA
+"FRA",5,NA,"France"," 2,612,878 ","",NA,NA,NA,NA
+"GBR",6,NA,"United Kingdom"," 2,471,784 ","",NA,NA,NA,NA
+"BRA",7,NA,"Brazil"," 2,252,664 ","",NA,NA,NA,NA
+"RUS",8,NA,"Russian Federation"," 2,014,775 ","",NA,NA,NA,NA
+"ITA",9,NA,"Italy"," 2,014,670 ","",NA,NA,NA,NA
+"IND",10,NA,"India"," 1,841,710 ","",NA,NA,NA,NA
+"CAN",11,NA,"Canada"," 1,821,424 ","",NA,NA,NA,NA
+"AUS",12,NA,"Australia"," 1,532,408 ","",NA,NA,NA,NA
+"ESP",13,NA,"Spain"," 1,322,965 ","",NA,NA,NA,NA
+"MEX",14,NA,"Mexico"," 1,178,126 ","",NA,NA,NA,NA
+"KOR",15,NA,"Korea, Rep."," 1,129,598 ","",NA,NA,NA,NA
+"IDN",16,NA,"Indonesia"," 878,043 ","",NA,NA,NA,NA
+"TUR",17,NA,"Turkey"," 789,257 ","",NA,NA,NA,NA
+"NLD",18,NA,"Netherlands"," 770,555 ","",NA,NA,NA,NA
+"SAU",19,NA,"Saudi Arabia"," 711,050 ","",NA,NA,NA,NA
+"CHE",20,NA,"Switzerland"," 631,173 ","",NA,NA,NA,NA
+"SWE",21,NA,"Sweden"," 523,806 ","",NA,NA,NA,NA
+"IRN",22,NA,"Iran, Islamic Rep."," 514,060 ","",NA,NA,NA,NA
+"NOR",23,NA,"Norway"," 499,667 ","",NA,NA,NA,NA
+"POL",24,NA,"Poland"," 489,795 ","",NA,NA,NA,NA
+"BEL",25,NA,"Belgium"," 483,262 ","",NA,NA,NA,NA
+"ARG",26,NA,"Argentina"," 475,502 ","",NA,NA,NA,NA
+"AUT",27,NA,"Austria"," 394,708 ","",NA,NA,NA,NA
+"ZAF",28,NA,"South Africa"," 384,313 ","",NA,NA,NA,NA
+"VEN",29,NA,"Venezuela, RB"," 381,286 ","",NA,NA,NA,NA
+"COL",30,NA,"Colombia"," 369,606 ","",NA,NA,NA,NA
+"THA",31,NA,"Thailand"," 365,966 ","",NA,NA,NA,NA
+"ARE",32,NA,"United Arab Emirates"," 348,595 ","",NA,NA,NA,NA
+"DNK",33,NA,"Denmark"," 314,887 ","",NA,NA,NA,NA
+"MYS",34,NA,"Malaysia"," 305,033 ","",NA,NA,NA,NA
+"SGP",35,NA,"Singapore"," 274,701 ","",NA,NA,NA,NA
+"CHL",36,NA,"Chile"," 269,869 ","",NA,NA,NA,NA
+"HKG",37,NA,"Hong Kong SAR, China"," 263,259 ","",NA,NA,NA,NA
+"EGY",38,NA,"Egypt, Arab Rep."," 262,832 ","",NA,NA,NA,NA
+"NGA",39,NA,"Nigeria"," 262,597 ","",NA,NA,NA,NA
+"ISR",40,NA,"Israel"," 258,217 ","",NA,NA,NA,NA
+"PHL",41,NA,"Philippines"," 250,182 ","",NA,NA,NA,NA
+"GRC",42,NA,"Greece"," 249,099 ","",NA,NA,NA,NA
+"FIN",43,NA,"Finland"," 247,546 ","",NA,NA,NA,NA
+"PAK",44,NA,"Pakistan"," 225,143 ","",NA,NA,NA,NA
+"PRT",45,NA,"Portugal"," 212,274 ","",NA,NA,NA,NA
+"IRL",46,NA,"Ireland"," 210,771 ","",NA,NA,NA,NA
+"IRQ",47,NA,"Iraq"," 210,280 ","",NA,NA,NA,NA
+"DZA",48,NA,"Algeria"," 205,789 ","",NA,NA,NA,NA
+"PER",49,NA,"Peru"," 203,790 ","",NA,NA,NA,NA
+"KAZ",50,NA,"Kazakhstan"," 203,521 ","",NA,NA,NA,NA
+"CZE",51,NA,"Czech Republic"," 196,446 ","",NA,NA,NA,NA
+"ROM",52,NA,"Romania"," 192,711 ","",NA,NA,NA,NA
+"UKR",53,NA,"Ukraine"," 176,309 ","",NA,NA,NA,NA
+"QAT",54,NA,"Qatar"," 171,476 ","",NA,NA,NA,NA
+"NZL",55,NA,"New Zealand"," 167,347 ","",NA,NA,NA,NA
+"KWT",56,NA,"Kuwait"," 160,913 ","",NA,NA,NA,NA
+"VNM",57,NA,"Vietnam"," 155,820 ","",NA,NA,NA,NA
+"HUN",58,NA,"Hungary"," 124,600 ","",NA,NA,NA,NA
+"BGD",59,NA,"Bangladesh"," 116,355 ","",NA,NA,NA,NA
+"AGO",60,NA,"Angola"," 114,147 ","",NA,NA,NA,NA
+"PRI",61,NA,"Puerto Rico"," 101,496 ","",NA,NA,NA,NA
+"MAR",62,NA,"Morocco"," 95,982 ","a",NA,NA,NA,NA
+"SVK",63,NA,"Slovak Republic"," 91,149 ","",NA,NA,NA,NA
+"ECU",64,NA,"Ecuador"," 84,040 ","",NA,NA,NA,NA
+"SYR",65,NA,"Syrian Arab Republic"," 73,672 ","",NA,NA,NA,NA
+"OMN",66,NA,"Oman"," 69,972 ","",NA,NA,NA,NA
+"CUB",67,NA,"Cuba"," 68,234 ","",NA,NA,NA,NA
+"AZE",68,NA,"Azerbaijan"," 66,605 ","",NA,NA,NA,NA
+"BLR",69,NA,"Belarus"," 63,267 ","",NA,NA,NA,NA
+"LKA",70,NA,"Sri Lanka"," 59,423 ","",NA,NA,NA,NA
+"HRV",71,NA,"Croatia"," 59,228 ","",NA,NA,NA,NA
+"DOM",72,NA,"Dominican Republic"," 59,047 ","",NA,NA,NA,NA
+"SDN",73,NA,"Sudan"," 58,769 ","b",NA,NA,NA,NA
+"LUX",74,NA,"Luxembourg"," 55,178 ","",NA,NA,NA,NA
+"UZB",75,NA,"Uzbekistan"," 51,113 ","",NA,NA,NA,NA
+"BGR",76,NA,"Bulgaria"," 50,972 ","",NA,NA,NA,NA
+"GTM",77,NA,"Guatemala"," 50,234 ","",NA,NA,NA,NA
+"URY",78,NA,"Uruguay"," 49,920 ","",NA,NA,NA,NA
+"TUN",79,NA,"Tunisia"," 45,662 ","",NA,NA,NA,NA
+"SVN",80,NA,"Slovenia"," 45,279 ","",NA,NA,NA,NA
+"CRI",81,NA,"Costa Rica"," 45,104 ","",NA,NA,NA,NA
+"MAC",82,NA,"Macao SAR, China"," 43,582 ","",NA,NA,NA,NA
+"LBN",83,NA,"Lebanon"," 42,945 ","",NA,NA,NA,NA
+"LTU",84,NA,"Lithuania"," 42,344 ","",NA,NA,NA,NA
+"ETH",85,NA,"Ethiopia"," 41,605 ","",NA,NA,NA,NA
+"GHA",86,NA,"Ghana"," 40,711 ","",NA,NA,NA,NA
+"KEN",87,NA,"Kenya"," 40,697 ","",NA,NA,NA,NA
+"SRB",88,NA,"Serbia"," 37,489 ","",NA,NA,NA,NA
+"PAN",89,NA,"Panama"," 36,253 ","",NA,NA,NA,NA
+"YEM",90,NA,"Yemen, Rep."," 35,646 ","",NA,NA,NA,NA
+"TKM",91,NA,"Turkmenistan"," 35,164 ","",NA,NA,NA,NA
+"JOR",92,NA,"Jordan"," 31,015 ","",NA,NA,NA,NA
+"BHR",93,NA,"Bahrain"," 29,044 ","",NA,NA,NA,NA
+"LVA",94,NA,"Latvia"," 28,373 ","",NA,NA,NA,NA
+"TZA",95,NA,"Tanzania"," 28,242 ","c",NA,NA,NA,NA
+"BOL",96,NA,"Bolivia"," 27,035 ","",NA,NA,NA,NA
+"PRY",97,NA,"Paraguay"," 25,502 ","",NA,NA,NA,NA
+"CMR",98,NA,"Cameroon"," 25,322 ","",NA,NA,NA,NA
+"CIV",99,NA,"Côte d'Ivoire"," 24,680 ","",NA,NA,NA,NA
+"SLV",100,NA,"El Salvador"," 23,864 ","",NA,NA,NA,NA
+"TTO",101,NA,"Trinidad and Tobago"," 23,320 ","",NA,NA,NA,NA
+"CYP",102,NA,"Cyprus"," 22,767 ","d",NA,NA,NA,NA
+"EST",103,NA,"Estonia"," 22,390 ","",NA,NA,NA,NA
+"ZMB",104,NA,"Zambia"," 20,678 ","",NA,NA,NA,NA
+"AFG",105,NA,"Afghanistan"," 20,497 ","",NA,NA,NA,NA
+"UGA",106,NA,"Uganda"," 19,881 ","",NA,NA,NA,NA
+"NPL",107,NA,"Nepal"," 18,963 ","",NA,NA,NA,NA
+"HND",108,NA,"Honduras"," 18,434 ","",NA,NA,NA,NA
+"GAB",109,NA,"Gabon"," 18,377 ","",NA,NA,NA,NA
+"GNQ",110,NA,"Equatorial Guinea"," 17,697 ","",NA,NA,NA,NA
+"BIH",111,NA,"Bosnia and Herzegovina"," 17,466 ","",NA,NA,NA,NA
+"ZAR",112,NA,"Congo, Dem. Rep."," 17,204 ","",NA,NA,NA,NA
+"BRN",113,NA,"Brunei Darussalam"," 16,954 ","",NA,NA,NA,NA
+"GEO",114,NA,"Georgia"," 15,747 ","e",NA,NA,NA,NA
+"PNG",115,NA,"Papua New Guinea"," 15,654 ","",NA,NA,NA,NA
+"JAM",116,NA,"Jamaica"," 14,755 ","",NA,NA,NA,NA
+"BWA",117,NA,"Botswana"," 14,504 ","",NA,NA,NA,NA
+"MOZ",118,NA,"Mozambique"," 14,244 ","",NA,NA,NA,NA
+"SEN",119,NA,"Senegal"," 14,046 ","",NA,NA,NA,NA
+"KHM",120,NA,"Cambodia"," 14,038 ","",NA,NA,NA,NA
+"COG",121,NA,"Congo, Rep."," 13,678 ","",NA,NA,NA,NA
+"ISL",122,NA,"Iceland"," 13,579 ","",NA,NA,NA,NA
+"NAM",123,NA,"Namibia"," 13,072 ","",NA,NA,NA,NA
+"TCD",124,NA,"Chad"," 12,887 ","",NA,NA,NA,NA
+"ALB",125,NA,"Albania"," 12,648 ","",NA,NA,NA,NA
+"NIC",126,NA,"Nicaragua"," 10,507 ","",NA,NA,NA,NA
+"MUS",127,NA,"Mauritius"," 10,486 ","",NA,NA,NA,NA
+"BFA",128,NA,"Burkina Faso"," 10,441 ","",NA,NA,NA,NA
+"MLI",129,NA,"Mali"," 10,308 ","",NA,NA,NA,NA
+"MNG",130,NA,"Mongolia"," 10,271 ","",NA,NA,NA,NA
+"SSD",131,NA,"South Sudan"," 10,220 ","",NA,NA,NA,NA
+"MDG",132,NA,"Madagascar"," 9,975 ","",NA,NA,NA,NA
+"ARM",133,NA,"Armenia"," 9,951 ","",NA,NA,NA,NA
+"ZWE",134,NA,"Zimbabwe"," 9,802 ","",NA,NA,NA,NA
+"MKD",135,NA,"Macedonia, FYR"," 9,613 ","",NA,NA,NA,NA
+"LAO",136,NA,"Lao PDR"," 9,418 ","",NA,NA,NA,NA
+"MLT",137,NA,"Malta"," 8,722 ","",NA,NA,NA,NA
+"BHS",138,NA,"Bahamas, The"," 8,149 ","",NA,NA,NA,NA
+"HTI",139,NA,"Haiti"," 7,843 ","",NA,NA,NA,NA
+"BEN",140,NA,"Benin"," 7,557 ","",NA,NA,NA,NA
+"MDA",141,NA,"Moldova"," 7,253 ","f",NA,NA,NA,NA
+"RWA",142,NA,"Rwanda"," 7,103 ","",NA,NA,NA,NA
+"TJK",143,NA,"Tajikistan"," 6,972 ","",NA,NA,NA,NA
+"NER",144,NA,"Niger"," 6,773 ","",NA,NA,NA,NA
+"KGZ",145,NA,"Kyrgyz Republic"," 6,475 ","",NA,NA,NA,NA
+"KSV",146,NA,"Kosovo"," 6,445 ","",NA,NA,NA,NA
+"MCO",147,NA,"Monaco"," 6,075 ","",NA,NA,NA,NA
+"GIN",148,NA,"Guinea"," 5,632 ","",NA,NA,NA,NA
+"BMU",149,NA,"Bermuda"," 5,474 ","",NA,NA,NA,NA
+"SUR",150,NA,"Suriname"," 5,012 ","",NA,NA,NA,NA
+"MNE",151,NA,"Montenegro"," 4,373 ","",NA,NA,NA,NA
+"MWI",152,NA,"Malawi"," 4,264 ","",NA,NA,NA,NA
+"BRB",153,NA,"Barbados"," 4,225 ","",NA,NA,NA,NA
+"MRT",154,NA,"Mauritania"," 4,199 ","",NA,NA,NA,NA
+"FJI",155,NA,"Fiji"," 3,908 ","",NA,NA,NA,NA
+"TGO",156,NA,"Togo"," 3,814 ","",NA,NA,NA,NA
+"SLE",157,NA,"Sierra Leone"," 3,796 ","",NA,NA,NA,NA
+"SWZ",158,NA,"Swaziland"," 3,744 ","",NA,NA,NA,NA
+"ERI",159,NA,"Eritrea"," 3,092 ","",NA,NA,NA,NA
+"GUY",160,NA,"Guyana"," 2,851 ","",NA,NA,NA,NA
+"ABW",161,NA,"Aruba"," 2,584 ","",NA,NA,NA,NA
+"BDI",162,NA,"Burundi"," 2,472 ","",NA,NA,NA,NA
+"LSO",163,NA,"Lesotho"," 2,448 ","",NA,NA,NA,NA
+"MDV",164,NA,"Maldives"," 2,222 ","",NA,NA,NA,NA
+"CAF",165,NA,"Central African Republic"," 2,184 ","",NA,NA,NA,NA
+"CPV",166,NA,"Cape Verde"," 1,827 ","",NA,NA,NA,NA
+"BTN",167,NA,"Bhutan"," 1,780 ","",NA,NA,NA,NA
+"LBR",168,NA,"Liberia"," 1,734 ","",NA,NA,NA,NA
+"BLZ",169,NA,"Belize"," 1,493 ","",NA,NA,NA,NA
+"TMP",170,NA,"Timor-Leste"," 1,293 ","",NA,NA,NA,NA
+"LCA",171,NA,"St. Lucia"," 1,239 ","",NA,NA,NA,NA
+"ATG",172,NA,"Antigua and Barbuda"," 1,134 ","",NA,NA,NA,NA
+"SYC",173,NA,"Seychelles"," 1,129 ","",NA,NA,NA,NA
+"SLB",174,NA,"Solomon Islands"," 1,008 ","",NA,NA,NA,NA
+"GMB",175,NA,"Gambia, The"," 917 ","",NA,NA,NA,NA
+"GNB",176,NA,"Guinea-Bissau"," 822 ","",NA,NA,NA,NA
+"VUT",177,NA,"Vanuatu"," 787 ","",NA,NA,NA,NA
+"GRD",178,NA,"Grenada"," 767 ","",NA,NA,NA,NA
+"KNA",178,NA,"St. Kitts and Nevis"," 767 ","",NA,NA,NA,NA
+"VCT",180,NA,"St. Vincent and the Grenadines"," 713 ","",NA,NA,NA,NA
+"WSM",181,NA,"Samoa"," 684 ","",NA,NA,NA,NA
+"COM",182,NA,"Comoros"," 596 ","",NA,NA,NA,NA
+"DMA",183,NA,"Dominica"," 480 ","",NA,NA,NA,NA
+"TON",184,NA,"Tonga"," 472 ","",NA,NA,NA,NA
+"FSM",185,NA,"Micronesia, Fed. Sts."," 326 ","",NA,NA,NA,NA
+"STP",186,NA,"São Tomé and Principe"," 263 ","",NA,NA,NA,NA
+"PLW",187,NA,"Palau"," 228 ","",NA,NA,NA,NA
+"MHL",188,NA,"Marshall Islands"," 182 ","",NA,NA,NA,NA
+"KIR",189,NA,"Kiribati"," 175 ","",NA,NA,NA,NA
+"TUV",190,NA,"Tuvalu"," 40 ","",NA,NA,NA,NA
