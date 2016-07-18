@@ -34,3 +34,7 @@ desc()
 #order by one of the columns in plyr or dplyr
 
 arrange()
+
+#remove a column in a data set
+
+dataset$column <- NULL

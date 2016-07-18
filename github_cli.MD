@@ -24,3 +24,16 @@ git push origin master #push the files to the remote repository
 
 git push --force #force the push
 
+mkdir --make a new directory
+
+ls --list directories
+
+touch --make an empty file
+
+mv file_name new_directory --move files between directories
+
+git log --see log of commits
+
+git clone https://github.com/randallhelms/reponame --clone a repo
+
+date --today's date
