@@ -1,0 +1,77 @@
+#Consider influenza epidemics for two parent heterosexual families. Suppose that the probability is 17% that at least one of the parents has contracted the disease. The probability that the father has contracted influenza is 12% while the probability that both the mother and father have contracted the disease is 6%. What is the probability that the mother has contracted influenza?
+
+#(Hints look at lecture 2 around 5:30 and chapter 4 problem 4).
+
+oneOf = .17
+dad = .12
+both = .06
+
+p(oneOf) - p(dad) + p(both)
+
+0.17 - .12 + .06 = 0.11
+
+#A random variable, X is uniform, a box from 0 to 1 of height 1. (So that its density is f(x)=1 for 0???x???1.) What is its 75th percentile? 
+
+#(Hints, look at lecture 2 around 21:30 and Chapter 5 Problem 5. Also, look up the help function for the qunif command in R.)
+
+qunif(0.75,0,1) = 0.75
+
+#You are playing a game with a friend where you flip a coin and if it comes up heads you give her X dollars and if it comes up tails she gives you Y dollars. The probability that the coin is heads is p (some number between 0 and 1.) What has to be true about X and Y to make so that both of your expected total earnings is 0. The game would then be called "fair".
+
+#(Hints, look at Lecture 4 from 0 to 6:50 and Chapter 5 Problem 6. Also, for further reading on fair games and gambling, start with the Dutch Book problem ). 
+
+for x to equal y, p must equal 1-p
+
+p -> y
+1-p -> x
+
+so:
+
+py = (1-p)x
+
+or
+
+p/1-p = y/x
+
+#A density that looks like a normal density (but may or may not be exactly normal) is exactly symmetric about zero. (Symmetric means if you flip it around zero it looks the same.) What is its median?
+
+#(Hints, look at quantiles from Lecture 2 around 21:30 and Chapter 2 Problem 7.
+
+amount of area on each side must be equal, so since 50% is below 0 and 50% above, the median must be zero
+
+#Consider the following PMF shown below in R
+
+x <- 1:4
+p <- x/sum(x)
+temp <- rbind(x, p)
+rownames(temp) <- c("X", "Prob")
+temp
+
+#What is the mean?
+
+xm <- sum(temp["X",] * temp["Prob",])
+
+xm = 3
+
+#A web site (www.medicine.ox.ac.uk/bandolier/band64/b64-7.html) for home pregnancy tests cites the following: "When the subjects using the test were women who collected and tested their own samples, the overall sensitivity was 75%. Specificity was also low, in the range 52% to 75%." Assume the lower value for the specificity. Suppose a subject has a positive test and that 30% of women taking pregnancy tests are actually pregnant. What number is closest to the probability of pregnancy given the positive test?
+
+#(Hints, watch Lecture 3 at around 7 minutes for a similar example. Also, there's a lot of Bayes' rule problems and descriptions out there, for example here's one for HIV testing. Note, discussions of Bayes' rule can get pretty heady. So if it's new to you, stick to basic treatments of the problem. Also see Chapter 3 Question 5.)
+
+p (pregnant) = 0.3
+p (non-pregnant) = 0.7
+p (positive | pregnant) = 0.75
+p (positive | non-pregnant) = 0.25
+p (negative | non-pregnant) = 0.52
+p (negative | pregnant) = 0.48
+
+p(pregnant | positive ) = (p(positive | pregnant) * p(pregnant)) / p(positive)
+
+p(positive) = (p(positive | pregnant) * p(pregnant)) + (p(negative | pregnant) * p(non-pregnant))
+
+p(positive) = (0.75 * 0.3) + (0.48 * 0.7)
+
+p(positive) = 0.561
+
+p(pregnant | positive ) = (0.75 * 0.3) / 0.561 
+
+p(pregnant | positive ) = 0.401

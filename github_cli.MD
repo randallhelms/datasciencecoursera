@@ -37,3 +37,5 @@ git log --see log of commits
 git clone https://github.com/randallhelms/reponame --clone a repo
 
 date --today's date
+
+git reset HEAD~ --rolls back to previous commit

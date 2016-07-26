@@ -1,0 +1,63 @@
+---
+title: "probability"
+output: html_document
+---
+----
+
+D = patient has hiv
++ = positive result
+- = negative result
+
+0.001 = prevalence
+0.997 =  + result with disease
+0.985 = - result with disease
+
+P(+ | D) * P(D)
+
+p(D) = 0.001
+
+p(+ | D)
+
+((0.997 * 0.001) / (0.001)) * 0.001
+
+((+ * D) / D) * D
+
+---
+
+P(+|~D)*P(~D)
+
+(1-.985)*(1-.001)
+
+| Now put the pieces together to compute the probability 
+| that the patient has the
+| disease given his positive test result,
+| P(D|+). Plug your last two answers into the
+| formula P(+|D) * P(D) / ( P(+|D) * P(D) +
+| P(+|~D) * P(~D) ) to compute P(D|+).
+
+P(+|D) * P(D) = 0.000997
+P(+|~D) * P(~D) = 0.014985
+
+0.000997 / (0.000997 + 0.014985)
+
+| The diagnostic likelihood ratio of a positive test, DLR_+, is the ratio of
+| the two + conditional probabilities, one given the presence of disease and
+| the other given the absence. Specifically, DLR_+ = P(+|D) / P(+|~D).
+| Similarly, the DLR_- is defined as a ratio. Which of the following do you
+| think represents the DLR_-?
+
+P(-|D) / P(-|~D)
+
+----
+
+Expected values are properties of distributions
+
+A population mean is a center of mass of a population
+
+A sample mean is a center of mass of observed data
+
+A population mean estimates a sample mean? False
+
+a sample mean is unbiased
+
+The more data in a sample mean, the more concentrated its density/mass function
