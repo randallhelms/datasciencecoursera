@@ -12,12 +12,13 @@ Where necessary, I've also included the relevant navigational commands to help y
 
 This script requires the following R packages:
 
-data.table
-plyr
+* data.table
+* plyr
 
 If you don't have one or both of these packages, you can install them with the following commands:
 
 install.packages("data.table")
+
 install.packages("plyr")
 
 Once you have written the final tidy_data.txt file, you can read it back into R using the following script:
