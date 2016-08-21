@@ -4,15 +4,15 @@ This means that the final data set provides means (averages) in numeric format f
 
 The dimensions of the final data set are thus 68 columns and 180 rows of numeric data.
 
-Activity Data
+*Activity Data*
 
 Activity data comes from y_train.txt and x_train.txt, and the run_analysis.R script replaces the initial integer values with string values for the activity names, taken from the activity_labels.txt file
 
-Subject Data
+*Subject Data*
 
 The subject data is an integer taken from the subject_train.txt and subject_test.txt files; there are no transformations done to this data.
 
-Measurement variable data
+*Measurement variable data*
 
 From the original 561 variables in the test and training sets, I have extracted the 66 mean() and std() variables, per the course project instructions. I have NOT included any meanFreq() or angle() variables (i.e. angle(X,gravityMean)) as these are not covered by the instruction "Extracts only the measurements on the mean and standard deviation for each measurement."
 
