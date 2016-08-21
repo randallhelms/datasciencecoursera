@@ -93,7 +93,7 @@ tidy_data = dcast(chopped_data, activities + subject_id ~ variable, mean)
 #move back to main folder and write the data to csv
 
 setwd("..")
-write.table(tidy_data,file = "tidy_data.txt")
+write.table(tidy_data,file = "tidy_data.txt",row.names = FALSE)
 
 #optional: write to CSV if that's what you prefer
 
