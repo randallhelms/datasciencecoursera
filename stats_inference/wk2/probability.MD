@@ -9,6 +9,8 @@ p' = sampled estimate
 
 (p' - p) / sqrt(p(1-p)/n) = normalized p'
 
+s/sqrt(n) = standard error of sample mean
+
 #distributions
 
 (mu+2*sigma/sqrt(n)) = mean + 2 standard deviations
@@ -17,6 +19,8 @@ p' = sampled estimate
 
 
 p' +/- 2*sqrt(p(1-p)/n) (2 represents the approximate 97.5% normal quantile, or two standard deviations)
+
+n-1 = degrees of freedom
 
 #example
 
