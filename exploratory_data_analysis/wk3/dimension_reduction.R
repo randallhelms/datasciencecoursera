@@ -148,3 +148,72 @@ plot(svd2$v[,1], xlab = "Column",ylab = "First right singular vector",pch=19)
 
 plot(svd2$v[,2],xlab = "Column",ylab = "Second right singular vector",pch = 19)
 
+#explaining variance
+
+svd1 <- svd(scale(dataMatrixOrdered))
+
+par(mfrow = c(1,2))
+
+plot(svd1$d,xlab = "Column",ylab = "Singular value",pch=19)
+
+plot(svd1$d^2/sum(svd1$d^2),xlab = "Column",ylab = "Percent of variance explained",pch = 19)
+
+#missing values
+
+dataMatrix2 <- dataMatrixOrdered
+
+dataMatrix2[sample(1:100,size=40,replace = FALSE)] <- NA #add missing data
+
+svdMissing <- svd(scale(dataMatrix2)) #doesn't work
+
+#imputing {impute}
+
+library(impute)
+
+dataMatrix2 <- dataMatrixOrdered
+
+dataMatrix2[sample(1:100,size=40,replace = FALSE)] <- NA #add missing data
+
+dataMatrix2 <- impute.knn(dataMatrix2)$data #imputes missing values from neighbors
+
+svd1 <- svd(scale(dataMatrixOrdered)); svd2 <- svd(scale(dataMatrix2))
+
+par(mfrow=c(1,2));plot(svd1$v[,1],pch=19);plot(svd2$v[,1],pch=19) #impute doesn't have major impact on svd graph
+
+#face example
+
+load("face.rda")
+
+image(t(faceData)[,nrow(faceData):1]) #t is for transpose
+
+faceSVD <- svd(scale(faceData))
+
+plot(faceSVD$d^2/sum(faceSVD$d^2),pch = 19, xlab = "Singular vector",ylab = "Variance explained")
+
+#create approximations of the face
+
+faceSVD <- svd(scale(faceData))
+
+approx1 <- faceSVD$u[,1] %*% t(faceSVD$v[,1]) * faceSVD$d[1] 
+
+# %*% is matrix multiplication
+# faceSVD$d[1] is a constant
+
+#make a diagonal matrix out of d
+
+approx5 <- faceSVD$u[,1:5] %*% diag(faceSVD$d[1:5]) %*% t(faceSVD$v[,1:5])
+
+approx10 <- faceSVD$u[,1:10] %*% diag(faceSVD$d[1:10]) %*% t(faceSVD$v[,1:10])
+
+#check the image approximations
+
+par(mfrow=c(1,4))
+
+image(t(approx1)[,nrow(approx1):1], main = "(a)")
+image(t(approx5)[,nrow(approx5):1], main = "(b)")
+image(t(approx10)[,nrow(approx10):1], main = "(c)")
+image(t(faceData)[,nrow(faceData):1], main = "(d)")
+
+#results - approx 5 and 10 are decent, 1 is useless
+#can create a decent approximation without having to store all data
+#svd is also good for summarizing data
