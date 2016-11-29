@@ -1,0 +1,195 @@
+---
+title: 'Reproducible Research: Peer Assessment 1'
+author: "Randall Helms"
+date: "15 November 2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This report uses activity monitoring data from a personal activity monitoring device, taken at five minute intervals over a two month period in autumn 2012.
+
+## Loading and preprocessing the data
+
+Let's start by reading the data in to R and doing some basic analyses to check out the way the data is structured:
+
+```{r working parameters, echo=TRUE}
+library(ggplot2)
+
+#read in activity data
+
+file = "activity.csv"
+
+activity <- read.table(file,header = TRUE,sep = ",")
+
+#set each column up as a vector (optional but tidier)
+
+steps <- activity$steps
+date <- activity$date
+interval <- activity$interval
+```
+
+Next, let's do some basic analyses of the data:
+
+```{r initial analysis, echo=TRUE}
+head(activity)
+
+str(activity)
+
+summary(activity)
+```
+
+## What is mean total number of steps taken per day?
+
+Let's start this process by aggregating the number of steps by day:
+
+```{r}
+
+stepsDay <- aggregate(steps ~ date, data = activity, sum, na.action = na.omit)
+```
+
+Now let's use that to create a histogram showing the distribution of steps by day:
+
+```{r,fig.width=5,fig.height=5}
+ggplot(stepsDay,aes(x=steps))+
+  geom_histogram(fill='forestgreen',bins=length(stepsDay$steps)/5)+
+  ggtitle("Frequency of total steps per day")+
+  xlab("Number of steps")+
+  ylab("Frequency")
+```
+
+Next we can calculate the sum, mean, and median number of steps taken per day:
+
+```{r sum mean and median,echo=TRUE}
+
+meanDay <- mean(stepsDay$steps)
+medianDay <- median(stepsDay$steps)
+```
+
+Here are the results:
+
+```{r results,echo=FALSE}
+print(paste("The mean number of steps taken per day is:",meanDay))
+print(paste("The median number of steps taken per day is:",medianDay))
+```
+
+## What is the average daily activity pattern?
+
+The next step is to calculate the average daily number of steps taken by each time interval, which can be done with the aggregate function:
+
+```{r}
+averageActivity <- aggregate(steps ~ interval,data=activity,mean,na.action = na.omit)
+```
+
+Then we can use this new vector to create a line chart:
+
+```{r,fig.width=5,fig.height=5}
+ggplot(averageActivity, aes(x=interval,y=steps))+
+  geom_line(color="darkorchid3")+
+  ggtitle("Average steps taken per 5-minute interval")+
+  xlab("Interval Length")+
+  ylab("Number of steps")
+```
+
+Wow, pretty neat! But what is the interval with the highest average number of steps?
+
+Let's quickly calculate that:
+
+```{r}
+maxRow <- averageActivity[which.max(averageActivity$steps),] #find and print row with most steps
+```
+
+Here's the result:
+
+```{r max row results,echo=FALSE}
+maxRow
+```
+
+The 835 second interval had the highest number of average steps: 206
+
+## Imputing missing values
+
+There were a *lot* of missing values in the original data set, but how many exactly?
+
+```{r}
+sum(is.na(activity))
+```
+
+Let's try to rectify that by filling in the gaps in the data with an average value for the relevant interval, although first we create a copy of the data frame:
+
+```{r imputing missing values}
+
+activityFull <- activity #create copy of the data frame
+
+naValues <- is.na(activityFull$steps) #create logical vector for catching NA steps
+
+intervalAvg <- tapply(activityFull$steps,activityFull$interval,mean,na.rm=TRUE,simplify = TRUE) #calculate mean steps for each interval
+
+activityFull$steps[naValues] <- intervalAvg[as.character(activityFull$interval[naValues])] #replace na values with the mean for their corresponding interval
+```
+
+Now that we have done so, let's re-calculate total steps by day:
+
+```{r}
+stepsDayFull <- aggregate(steps ~ date,data=activityFull,sum,na.action = na.omit)
+```
+
+And then use that to re-plot the histogram of steps taken per day:
+
+```{r,fig.width=5,fig.height=5}
+ggplot(stepsDayFull,aes(x=steps))+
+  geom_histogram(fill='steelblue',bins=length(stepsDay$steps)/5)+
+  ggtitle("Frequency of total steps per day \nwith missing values imputed")+
+  xlab("Number of steps")+
+  ylab("Frequency")
+```
+
+We can also recalculate the mean and median values for steps per day:
+
+```{r}
+meanDayFull <- mean(stepsDayFull$steps)
+medianDayFull <- median(stepsDayFull$steps)
+```
+
+And here are the values for them:
+
+```{r full results,echo=FALSE}
+print(paste("The mean number of steps taken per day (with imputed values included) is:",meanDayFull))
+print(paste("The median number of steps taken per day (with imputed values included)  is:",medianDayFull))
+```
+
+What are the differences between the data with and without the imputed values?
+
+```{r difference,echo=FALSE}
+print(paste("The difference in mean steps taken between data with and without imputed values is",meanDayFull - meanDay,"steps."))
+print(paste("The difference in median steps taken between data with and without imputed values is",medianDayFull - medianDay,"steps."))
+```
+## Are there differences in activity patterns between weekdays and weekends?
+
+Finally, let's check and see if there are any differences in the activity patterns between weekdays and weekends.
+
+In order to do so, we need to add new columns to the `activityFull` dataframe and then re-aggregate the data for steps by interval and whether it is a weekday or weekend:
+
+```{r}
+activityFull$dayname <- weekdays(as.Date(activityFull$date)) #add column for day of the week
+
+activityFull$daytype <- ifelse(activityFull$dayname %in% c('Saturday','Sunday'),'Weekend','Weekday') #use conditional statement to set the type of day in a new column
+
+afFinal <- aggregate(steps ~ interval + daytype,data=activityFull,mean,na.action = na.omit)
+```
+
+Now that our data is ready, let's plot weekends versus weekdays on two separate line charts to make a simple visual comparison:
+
+```{r,fig.width=5,fig.height=5}
+ggplot(afFinal, aes(x=interval,y=steps,color=daytype))+
+  geom_line()+
+  ggtitle("Average steps taken per 5-minute interval:\nWeekdays vs Weekends")+
+  xlab("Interval Length")+
+  ylab("Number of steps")+
+  facet_grid(~daytype)+
+  theme(legend.position="none")
+```
+
+And that's it! Thanks for taking the time to read through this report.
